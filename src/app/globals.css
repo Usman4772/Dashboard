@@ -1,33 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+:root{
+    --bg:white;
+    --text:#1B254B;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+[data-theme="black"]{
+    --bg:#1B254B;
+    --text:white
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.nav-container{
+    background: #e9eff848;
+    backdrop-filter: blur(10px);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.color-styling{
+    background: #ddebf7;
+}
+.nft-discover{
+    background: linear-gradient(blue,rgb(84, 84, 181));
+}
+
+.ant-table-wrapper .ant-table-thead >tr>th {
+    background: white !important;
+}
+.moon{
+    transform: rotate(134deg);
+  transform-origin: center;
 }

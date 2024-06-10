@@ -1,0 +1,19 @@
+/* DataTable.css */
+
+.custom-table .ant-table-thead > tr > th {
+  background-color: #f0f0f0;
+  color: #807d7d97;
+  font-weight: bold;
+  text-align: center;
+  font-size: 14px;
+}
+
+.custom-table .ant-table-tbody > tr.custom-row {
+  color: #000000;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.custom-table .ant-table-tbody > tr.custom-row:hover {
+  background-color: #f5f5f5; /* Change background color on hover */
+}
